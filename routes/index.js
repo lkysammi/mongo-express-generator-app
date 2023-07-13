@@ -22,9 +22,9 @@ router.get('/contact', function(req, res, next) {
 });
 
 /* GET project page. */
-router.get('/project', function(req, res, next) {
-  res.render('index', { title: 'Project' });
-});
+//router.get('/project', function(req, res, next) {
+ //res.render('index', { title: 'Project' });
+//});
 
 /* GET service page. */
 router.get('/service', function(req, res, next) {
