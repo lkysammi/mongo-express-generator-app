@@ -12,7 +12,7 @@
               <th scope="col">Title</th>
               <th scope="col">Description</th>
               <th scope="col">Deadline</th>
-              <th scope="col">Edit</th>
+              <th scope="col">Update</th>
             </tr>
           </thead>
           <tbody>
@@ -22,7 +22,7 @@
                     <td><%= ProjectList[index].description %></td>
                     <td><%= ProjectList[index].deadline %></td>
                     <td>
-                      <a href="/projects/edit/<%= ProjectList[index].id %>" class="btn btn-info btn-sm"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                      <a href="/projects/edit/<%= ProjectList[index].id %>" class="btn btn-info btn-sm"><i class="fa-solid fa-pen-to-square"></i> Update</a>
                     </td>
                 </tr>
             <% } %>
