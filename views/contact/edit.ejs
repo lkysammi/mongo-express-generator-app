@@ -1,0 +1,34 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/top_nav.ejs %>
+ 
+<main class="container">
+    <form class="form" method="POST">
+        <div class="form-group"><br>
+          <label for="cfirstname">First Name:</label>
+          <input type="text" class="form-control" id="cfirstname" name="cfirstname" value="<%= contact.cfirstname%>">
+        </div><br>
+        <div class="form-group">
+            <label for="clastname">Last Name:</label>
+            <input type="text" class="form-control" id="clastname" name="clastname" value="<%= contact.clastname%>">
+        </div><br>
+        <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="number" class="form-control" id="contact" name="contact" value="<%= contact.contact%>">
+        </div><br>
+        <div class="form-group">
+            <label for="cemail">Email:</label>
+            <input type="text" class="form-control" id="cemail" name="cemail" value="<%= contact.cemail%>">
+        </div><br>
+        <div class="form-group">
+            <label for="cmessage">Message:</label>
+            <input type="text" class="form-control" id="cmessage" name="cmessage" value="<%= contact.cmessage%>">
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>

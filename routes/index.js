@@ -16,11 +16,6 @@ router.get('/about', function(req, res, next) {
   res.render('aboutme', { title: 'About' });
 });
 
-/* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
-});
-
 /* GET service page. */
 router.get('/service', function(req, res, next) {
   res.render('services', { title: 'Service' });
