@@ -3,10 +3,10 @@
 <%- include ../partials/top_nav.ejs %>
  
 <main class="container">
-    <form class="form" method="POST">
-        <div class="form-group"><br>
-          <label for="cfirstname">First Name:</label>
-          <input type="text" class="form-control" id="cfirstname" name="cfirstname" value="<%= contact.cfirstname%>">
+    <form class="form" method="POST" id="myForm">
+        <div class="form-group">
+            <label for="cfirstname">First Name:</label>
+            <input type="text" class="form-control" id="cfirstname" name="cfirstname" value="<%= contact.cfirstname%>">
         </div><br>
         <div class="form-group">
             <label for="clastname">Last Name:</label>
@@ -32,3 +32,4 @@
 <%- include ../partials/bottom_nav.ejs %>  
 
 <%- include ../partials/footer.ejs %>
+
